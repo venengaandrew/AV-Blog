@@ -1,7 +1,7 @@
 +++
 title = 'My First Post'
 date = 2024-01-22T21:49:54-06:00
-draft = true
+draft = false
 +++
 
 ## Intoduction
