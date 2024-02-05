@@ -1,14 +1,8 @@
-FROM ubuntu:jammy
+FROM nginx:alpine as build
 # Update the package repository
 # Install necessary packages
-RUN apt-get update && apt-get install -y \
-    curl \
-    git \
-    unzip \
-    wget \
-    zip \
-    ca-certificates && \
-    update-ca-certificates
+RUN apk add --update \
+    wget
 
 ARG HUGO_VERSION=0.122.0
 
